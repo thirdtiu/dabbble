@@ -1,6 +1,6 @@
 <div>
-  <ul class="thumbnails">
-    <li class="shot span3" ng-repeat="shot in list.shots">
+  <ul class="row thumbnails">
+    <li class="shot col-sm-6 col-xs-6" ng-repeat="shot in list.shots">
       <div class="thumbnail">
         <a href="#/shots/{{shot.id}}">
           <img ng-src="{{ shot.image_url}}" alt="">
@@ -16,18 +16,12 @@
             <i class="icon-eye-open"></i>
             {{ shot.views_count }}
           </span>
-          <span class="stat">
-            <i class="icon-comment"></i>
-            {{ shot.comments_count }}
-          </span>
+          
           <span class="stat">
             <i class="icon-heart"></i>
             {{ shot.likes_count }}
           </span>
-          <span class="stat">
-            <i class="icon-share-alt"></i>
-            {{ shot.rebounds_count }}
-          </span>
+          
         </div>
       </div>
     </li>
